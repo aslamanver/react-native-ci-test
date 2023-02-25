@@ -8,5 +8,7 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: aslamanver/react-native-docker@1.0.1
-      - name: Get the output time
-        run: echo "The time was done"
+      - name: Install NPM Dependencies
+        run: npm install
+      - name: Run NX Dev Android Build
+        run: npx nx build-android mobile
