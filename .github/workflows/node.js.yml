@@ -14,6 +14,6 @@ jobs:
       - name: some
         run: ls
       - name: Install NPM Dependencies
-        run: npm install
+        run: cd ../ && pm install
       - name: Run NX Dev Android Build
         run: npx nx build-android mobile
