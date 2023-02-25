@@ -11,7 +11,9 @@ jobs:
     steps:
       - name: React Native CI
         uses: aslamanver/react-native-docker@v1
+      - name: some
+        run: ls
       - name: Install NPM Dependencies
-        run: ls && cd ../ && ls && pw && npm install
+        run: npm install
       - name: Run NX Dev Android Build
         run: npx nx build-android mobile
