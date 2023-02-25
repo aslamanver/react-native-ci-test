@@ -5,9 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: aslamanver/react-native-docker@1.0.1
+      - name: React Native CI
+        uses: aslamanver/react-native-docker@v1
       - name: Install NPM Dependencies
         run: npm install
       - name: Run NX Dev Android Build
