@@ -3,15 +3,14 @@
   "npmScope": "citest",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "@nx/workspace/tasks-runners/default",
       "options": {
         "cacheableOperations": [
           "build",
           "lint",
           "test",
           "e2e"
-        ],
-        "accessToken": "NmVhYzRlOGUtMWQ5Yi00MmQ1LWFmNDUtNzE0MjUxZWJiNjhkfHJlYWQtd3JpdGU="
+        ]
       }
     }
   },
