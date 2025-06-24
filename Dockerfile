@@ -1,4 +1,4 @@
-FROM aslamanver/react-native:1.0.1
+FROM aslamanver/react-native:1.0.4
 WORKDIR /app
 COPY . .
 RUN npm install
